@@ -72,7 +72,7 @@ body{
     align-items: center;
     background-image: url('image/bg1.jpg');
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     min-height: 100vh;
     margin:0;
