@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Riot&family=Ubuntu&display=swap');
+
+body {
+    text-align: center;
+    align-items: center;
+    background-image: url('image/bg1.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.instruct{
+    text-align: center;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 2.5vw;
+    color:#fdf8e1;
+}
+
+h1{
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 4vw;
+    color: #ffc6ff;
+}
+
+h3{
+    font-size: 2.25vw;
+}
+
+.logo{
+    width:5vw;
+    height:5vw;
+}
+
+.quiz-container {
+    margin: auto;
+}
+
+.question {
+    display: none;
+    color:#2b2d42;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    background-color: #b5e48c;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: 0.25vw solid black;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the labels */
+input[type="radio"] + label {
+    cursor: pointer;
+    padding: 1vw;
+    border: 0.05vw solid black;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0.25vw;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    font-size: 2vw;
+}
+
+/* Background color when the radio button is checked */
+input[type="radio"]:checked + label {
+    background-color: #cce5ff; /* Color for selected option */
+    border-color: black;
+}
+
+
+.result {
+    margin-top: 20px;
+}
+
+button{
+    font-size: 1.5vw;
+    color:white;
+    font-family: 'Protest Riot', sans-serif;
+    background-color: #48cae4;
+    padding:0.8vw 0.5vw;
+    cursor:cell;
+    border: 0.2vw solid;
+    box-shadow: 0.2vw 0.2vw white, 0.2vw 0.2vw black;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+    background-color: #00b4d8;
+    color:white;
+    box-shadow: 0.2vw 0.2vw white, 0.4vw 0.4vw black;
+    transform: translate(-2px, -2px);
+}
+
+.submit{
+    font-size: 1.5vw;
+    color:#344e41;
+    font-family: 'Protest Riot', sans-serif;
+    background-color: #f9dc5c;
+    padding:0.8vw 0.5vw;
+    cursor:crosshair;
+    border: 0.2vw solid;
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw white, 0.2vw 0.2vw black;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.submit:hover {
+    background-color: #fae588;
+    color:#344e41;
+    box-shadow: 0.2vw 0.2vw white, 0.4vw 0.4vw black;
+    transform: translate(-2px, -2px);
+}
+
+.incorrect-question {
+    background-color: #ffb3c6; 
+}

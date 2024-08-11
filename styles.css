@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Strike&family=Protest+Riot&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  min-height: 100vh;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 3.5vw; 
+  color:#f1faee;
+  text-shadow: 0 0 0.3vw #9bf6ff;
+}
+
+.instruct{
+  text-align: center;
+  font-family: 'Protest Riot', sans-serif;
+  font-size: 2.5vw;
+  color: #f1faee;
+}
+
+body{
+  text-align: center;
+  align-items: center;
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin:0;
+  padding:0;
+  width:auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 2.5vw;
+}
+
+.dropdown {
+  font-family: 'Protest Strike', sans-serif;
+  padding: 8px;
+  font-size: 1.5vw;
+  border: 0.2vw solid #3498db; 
+  border-radius: 5px;
+  background-color: #ecf0f1; 
+  color: #333; 
+}
+
+.dropdown option {
+  font-family: 'Protest Strike', sans-serif;
+  background-color: #ffffff; 
+  color: #333; 
+}
+
+#dropdown1, #radiooption2, #radiooption3{
+  width:100%;
+  margin:0%;
+}
+
+table {
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  border: 0.2vw solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 0.2vw solid black;
+}
+
+th{
+  font-family: 'Protest Strike', sans-serif;
+  font-style: oblique;
+  background-color: #bde0fe;
+  font-size: 2vw;
+}
+
+td{
+  font-family: 'Protest Strike', sans-serif;
+  font-style: normal;
+  background-color: #edf6f9;
+  font-size: 2vw;
+}
+
+label{
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 2.0vw;
+  cursor: pointer;
+  color: white;
+}
+
+#link1{
+  position: relative;
+  display: inline-block;
+  padding: 1.2vw 1.2vw;
+  color: #9bf6ff;
+  letter-spacing: 0.1vw;
+  font-size: 2.5vw;
+  transition: 0.2s;
+  font-family: 'Protest Strike', sans-serif;
+  overflow: hidden;
+}
+
+#link1:hover{
+  color: #255784;
+  background: #9bf6ff;
+  box-shadow: 0 0 0.5vw #9bf6ff, 0 0 1vw #9bf6ff, 0 0 2vw #9bf6ff;
+  transition-delay: 1s;
+} 
+
+#link1 span {
+  position: absolute;
+  display: block;
+  opacity: 0; /* Initially hidden */
+  transition: all 1s ease; /* Smooth transition for all properties */
+}
+
+#link1:hover span {
+  opacity: 1; /* Show spans on hover */
+}
+
+#link1 span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.3vw;
+  background: linear-gradient(90deg, transparent, #9bf6ff);
+}
+
+#link1:hover span:nth-child(1) {
+  left: 100%;
+}
+
+#link1 span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.3vw;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #9bf6ff);
+}
+
+#link1:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s; /* Delay to match animation */
+}
+
+#link1 span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.3vw;
+  background: linear-gradient(270deg, transparent, #9bf6ff);
+}
+
+#link1:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s; /* Delay to match animation */
+}
+
+#link1 span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.3vw;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #9bf6ff);
+}
+
+#link1:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s; /* Delay to match animation */
+}
+
+#link2{
+  position: relative;
+  display: inline-block;
+  padding: 1.2vw 1.2vw;
+  color: #bfd200;
+  letter-spacing: 0.1vw;
+  font-size: 2.5vw;
+  transition: 0.2s;
+  font-family: 'Protest Strike', sans-serif;
+  overflow: hidden;
+}
+
+#link2:hover{
+  color: #255784;
+  background: #bfd200;
+  box-shadow: 0 0 0.5vw #bfd200, 0 0 1vw #bfd200, 0 0 2vw #bfd200;
+  transition-delay: 1s;
+} 
+
+#link2 span {
+  position: absolute;
+  display: block;
+  opacity: 0; /* Initially hidden */
+  transition: all 1s ease; /* Smooth transition for all properties */
+}
+
+#link2:hover span {
+  opacity: 1; /* Show spans on hover */
+}
+
+#link2 span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.3vw;
+  background: linear-gradient(90deg, transparent, #bfd200);
+}
+
+#link2:hover span:nth-child(1) {
+  left: 100%;
+}
+
+#link2 span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.3vw;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #bfd200);
+}
+
+#link2:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s; /* Delay to match animation */
+}
+
+#link2 span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.3vw;
+  background: linear-gradient(270deg, transparent, #bfd200);
+}
+
+#link2:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s; /* Delay to match animation */
+}
+
+#link2 span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.3vw;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #bfd200);
+}
+
+#link2:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s; /* Delay to match animation */
+}
+
+button{
+  font-size: 1.5vw;
+  color:white;
+  font-family: 'Protest Riot', sans-serif;
+  background-color: #48cae4;
+  padding:0.8vw 0.5vw;
+  border: 2px solid;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw white, 0.2vw 0.2vw black;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+  background-color: #00b4d8;
+  color:white;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw white, 0.4vw 0.4vw black;
+  transform: translate(-2px, -2px);
+}
+
+.solution{
+  color: white;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+.radio-label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  border: 0.2vw solid black; 
+  background-color: white; 
+  box-sizing: border-box;
+}
+
+input[type="radio"]:checked + .radio-label:before {
+  background-color: #2196F3; 
+  border-color: black; 
+}
+
+.logo{
+  width:5vw;
+  height:5vw;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1vw;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1vw;
+  color: white;
+  font-family:'Arial', sans-serif;
+}
+
+.emptyspace{
+  flex: 1;
+}
+
+.flowchart2{
+  border: 2px solid black; 
+  max-width: 90%;
+  height:auto;
+}

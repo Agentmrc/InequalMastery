@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+        });
+    </script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 98%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #column1 {
+            width: 30%; 
+        }
+
+        #column2 {
+            width: 70%; 
+        }
+    </style>
+</head>
+<body>
+
+<h2><img class="logo" src="image/logo2.png"> SOLVE ONE SIDE MODULUS (<) INEQUALITY <img class="logo" src="image/logo.png"></h2>
+
+<button onclick="window.location.href='index.html'">Home<ion-icon name="home-outline"></ion-icon></button>
+<br>
+
+<div id="question">
+  <h3>QUESTION: \(| \frac{1}{x - 2} | < 3\)</h3>
+</div><br>
+
+<table id="solution">
+    <thead>
+        <tr>
+            <th>Explanation</th>
+            <th>Solution</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="column1">1. Apply Formula \(| x | < a ↔ -a < x < a\)</td>
+            <td id="column2">\(-3 < \frac{1}{x - 2} < 3\)</td>
+        </tr>
+        <tr style="display: none;">
+            <td id="column1">2. \( x > -a \) and \( x < a \)</td>
+            <td id="column2">\( \frac{1}{x - 2} > -3\) <br><br> and <br><br> \( \frac{1}{x - 2} < 3\)</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        <tr style="display: none;">
+            <td id="column1">3. Zerorise RHS and simplify the inequality</td>
+            <td id="column2">\( \frac{1}{x - 2} + 3 > 0\) <br><br> and <br><br> \( \frac{1}{x - 2} - 3 < 0\)</td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">4. Factorise completely</td>
+          <td id="column2">\( \frac{3x - 5}{x - 2} > 0\) <br><br> and <br><br> \( \frac{7 - 3x}{x - 2} < 0\)</td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">5. Find all critical values</td>
+          <td id="column2">\( x = \frac{5}{3} ; x = 2\) <br><br> and <br><br> \( x = \frac{7}{3} ; x = 2\)</td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">6. Table of Sign</td>
+          <td id="column2"><img src="image/table2.jpg" alt="img"><br><p>and</p><br><img src="image/table3.jpg" alt="img"></td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">7. Write down the solution</td>
+          <td id="column2">\( (-∞ , \frac{5}{3} )\) U \((2 , ∞)\) and \((-∞ , 2)\) U \((\frac{7}{3} , ∞)\)</td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">8. Use number lines to merge the answers</td>
+          <td id="column2"><img id="noline" src="image/noline1.jpg" alt="img"></td>
+        </tr>
+        <tr style="display: none;">
+          <td id="column1">9. Write down the final solution</td>
+          <td id="column2">\( (-∞ , \frac{5}{3})\) U \((\frac{7}{3} , ∞)\)</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<button id="nextstep" onclick="displayNextRow()">Next Step<ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+<br><br>
+
+  <script>
+    let currentRow = 2;
+
+    function displayNextRow() {
+      const table = document.getElementById('solution');
+      const rows = table.getElementsByTagName('tr');
+
+      if (currentRow < rows.length) {
+        rows[currentRow].style.display = 'table-row';
+        currentRow++;
+      }
+
+      if (currentRow === rows.length) {
+        document.getElementById('nextstep').disabled = true;
+      }
+    }
+  </script>
+
+<div class="emptyspace"></div>
+
+<footer>
+  <p>&copy; 2024 INEQUAL MASTERY. All rights reserved.</p>
+  <p>Owner: KANG KOOI WEI</p>
+</footer>
+
+</body>
+</html>

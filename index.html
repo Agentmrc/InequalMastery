@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inequal Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+        });
+    </script>
+</head>
+<body>
+    <h1><img class="logo" src="image/logo2.png"> INEQUAL
+    MASTERY<>  <img class="logo" src="image/logo.png"></h1>
+    <a href="documentation.html" id="link1">
+    <span></span><span></span><span></span><span></span>HOW TO USE <ion-icon name="bulb-outline"></ion-icon>
+    </a>
+    <a href="exercise.html" id="link2">
+    <span></span><span></span><span></span><span></span>CHALLENGE YOURSELF <ion-icon name="hardware-chip-outline">
+    </a>
+    <h2 class="instruct">Select a type of inequality:</h2>
+    <select id="dropdown" onchange="showOption()" class="dropdown">
+        <option value="option0">Select</option>
+        <option value="option1">Both sides with modulus</option>
+        <option value="option2">One side with modulus</option>
+        <option value="option3">Without modulus</option>
+    </select>
+    
+        <div id="dropdown1" style="display:none;">
+            <table>
+                <thead>
+                    <tr><h2 class="solution">SOLUTION<ion-icon name="caret-down"></ion-icon></h2></tr>
+                </thead>
+                <tbody>   
+                    <tr>
+                        <th>Example</th>
+                        <td>\(| x - 3 | < | 2x + 5 |\)</td>
+                    </tr>
+                    <tr>
+                        <th>Technique/Formula</th>
+                        <td>Squaring Both Sides</td>
+                    </tr>
+                </tbody> 
+            </table><br>
+            <button onclick="window.location.href='example.html'">Example<ion-icon name="arrow-forward-circle"></ion-icon></button>
+        </div>
+
+        <div id="radiooption2" style="display:none;">
+            <h2 class="instruct">Choose an inequality sign:</h2>
+            <input type="radio" id="sign1" name="sign" value="sign1" onclick="updateTable()">
+            <label for="sign1" class="radio-label"> < </label><br>
+        
+            <input type="radio" id="sign2" name="sign" value="sign2" onclick="updateTable()">
+            <label for="sign2" class="radio-label"> > </label><br>
+
+            <input type="radio" id="sign3" name="sign" value="sign3" onclick="updateTable()">
+            <label for="sign3" class="radio-label"> ≤ </label><br>
+
+            <input type="radio" id="sign4" name="sign" value="sign4" onclick="updateTable()">
+            <label for="sign4" class="radio-label"> ≥ </label>
+
+            <table>
+                <thead>
+                    <tr><h2 class="solution">SOLUTION<ion-icon name="caret-down"></ion-icon></h2></tr>
+                </thead>
+                <tbody>   
+                    <tr>
+                        <th>Example</th>
+                        <td id="example1"></td>
+                    </tr>
+                    <tr>
+                        <th>Technique/Formula</th>
+                        <td id="tandf1"></td>
+                    </tr>
+                </tbody> 
+            </table><br>
+            <button onclick="redirect()">Example<ion-icon name="arrow-forward-circle"></ion-icon></button>
+
+        </div>  
+
+        <div id="radiooption3" style="display:none;">
+            <h2 class="instruct">Choose the type of inequality(no modulus):</h2>
+            <input type="radio" id="linear" name="nomodulus" value="linear" onclick="updateTable2()">
+            <label for="linear" class="radio-label">Linear</label><br>
+        
+            <input type="radio" id="nonlinear" name="nomodulus" value="nonlinear" onclick="updateTable2()">
+            <label for="nonlinear" class="radio-label">Non-Linear</label><br>
+
+            <input type="radio" id="combine1" name="nomodulus" value="combine1" onclick="updateTable2()">
+            <label for="combine1" class="radio-label">Combination Type 1</label><br>
+
+            <input type="radio" id="combine2" name="nomodulus" value="combine2" onclick="updateTable2()">
+            <label for="combine2" class="radio-label">Combination Type 2</label>
+
+            <table>
+                <thead>
+                    <tr><h2 class="solution">SOLUTION<ion-icon name="caret-down"></ion-icon></h2></tr>
+                </thead>
+                <tbody>   
+                    <tr>
+                        <th>Example</th>
+                        <td id="example2"></td>
+                    </tr>
+                    <tr>
+                        <th>Technique/Formula</th>
+                        <td id="tandf2"></td>
+                    </tr>
+                </tbody> 
+            </table><br>
+            <button onclick="redirect2()">Example<ion-icon name="arrow-forward-circle"></ion-icon></button>
+
+        </div>
+    <script src="script.js"></script>
+    <br><br>
+    
+    <div class="emptyspace"></div>
+
+    <div class="footer">
+        <p>&copy; 2024 INEQUAL MASTERY. All rights reserved.</p>
+        <p>Owner: KANG KOOI WEI</p>
+    </div>
+
+</body>
+</html>
